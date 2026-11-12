@@ -1,101 +1,233 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maryam Akram - Computer Science Student, Technology Enthusiast and Youth Advocate">
+    <title>Maryam Akram | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-  <nav>
-    <h2 class="logo">MyPortfolio.</h2>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
+            <a href="#home" class="logo">Maryam<span>.</span></a>
 
-<section id="home" class="hero">
-  <h1>Hello, I'm Your Name 👋</h1>
-  <h2>Aspiring Web Developer</h2>
-  <p>I create responsive and beautiful websites
-  using HTML, CSS and JavaScript.</p>
-  <a href="#projects" class="btn">View My Projects</a>
-</section>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am a beginner web developer passionate about
-    learning web technologies. I enjoy creating
-    websites and improving my coding skills.
-    My goal is to become a professional web developer.
-  </p>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <h3>My Skills</h3>
-  <div class="skills">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>JavaScript</span>
-    <span>Responsive Design</span>
-    <span>Git & GitHub</span>
-  </div>
-</section>
+    <!-- HOME SECTION -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="welcome">HELLO, WELCOME TO MY PORTFOLIO</p>
 
-<section id="projects">
-  <h2>My Projects</h2>
+            <h1>Hi, I'm <span>Maryam Akram</span></h1>
 
-  <div class="project-container">
+            <h2>Computer Science Student | Youth Advocate</h2>
 
-    <div class="project">
-      <h3>Personal Portfolio</h3>
-      <p>A website showcasing my skills and
-      web development journey.</p>
-      <small>HTML, CSS, JavaScript</small>
-    </div>
+            <p>
+                I am a Computer Science undergraduate from Peshawar, Pakistan,
+                passionate about technology, artificial intelligence,
+                digital inclusion, women's empowerment and social impact.
+            </p>
 
-    <div class="project">
-      <h3>Landing Page</h3>
-      <p>A responsive landing page with
-      a modern design.</p>
-      <small>HTML, CSS</small>
-    </div>
+            <a href="#projects" class="btn">View My Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+    </section>
 
-    <div class="project">
-      <h3>To-Do List</h3>
-      <p>A simple application to add and
-      manage daily tasks.</p>
-      <small>HTML, CSS, JavaScript</small>
-    </div>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
 
-  </div>
-</section>
+        <div class="about-content">
+            <p>
+                My name is Maryam Akram. I am pursuing a Bachelor of Computer
+                Science at Shaheed Benazir Bhutto Women University, Peshawar.
+            </p>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: yourname@email.com</p>
-  <p>GitHub: github.com/yourusername</p>
+            <p>
+                I am interested in using technology to create meaningful
+                opportunities for people, particularly women and young people.
+                Alongside my academic journey, I actively participate in
+                youth leadership, humanitarian activities, gender equality
+                advocacy and climate initiatives.
+            </p>
 
-  <form id="contactForm">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+            <p>
+                My goal is to combine technology, innovation and leadership
+                to develop inclusive solutions that make a positive difference
+                in society.
+            </p>
+        </div>
 
-  <p id="message"></p>
-</section>
+        <h3 class="subheading">My Education</h3>
 
-<footer>
-  <p>© 2026 My Personal Portfolio</p>
-</footer>
+        <div class="info-card">
+            <h3>Bachelor of Computer Science</h3>
+            <p>Shaheed Benazir Bhutto Women University, Peshawar</p>
+            <p>2025 – Present</p>
+        </div>
 
-<script src="script.js"></script>
+        <h3 class="subheading">My Skills</h3>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Java</span>
+            <span>C++</span>
+            <span>Python (Learning)</span>
+            <span>Artificial Intelligence</span>
+            <span>Prompt Engineering</span>
+            <span>Canva</span>
+            <span>Figma</span>
+            <span>Communication</span>
+            <span>Leadership</span>
+            <span>Report Writing</span>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section projects-section">
+        <h2 class="section-title">My Projects</h2>
+
+        <p class="section-description">
+            Here are some of my projects and learning experiences.
+        </p>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <h3>SignSpeak</h3>
+                <p>
+                    An AI-powered web platform designed to recognize
+                    and translate basic sign language, exploring
+                    accessible communication through technology.
+                </p>
+                <p><strong>Technologies:</strong> Web Development, AI,
+                Computer Vision</p>
+                <a href="#contact">Ask me about this project</a>
+            </div>
+
+            <div class="project-card">
+                <h3>Personal Portfolio Website</h3>
+                <p>
+                    A responsive personal website showcasing my
+                    education, technical skills, projects and
+                    professional experiences.
+                </p>
+                <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+                <a href="#home">View this website</a>
+            </div>
+
+            <div class="project-card">
+                <h3>My Third Course Assignment</h3>
+                <p>
+                    Replace this description with a real assignment
+                    you completed during your web development course.
+                    Explain what it does and what you learned.
+                </p>
+                <p><strong>Technologies:</strong> Add your actual tools</p>
+                <a href="https://github.com/" target="_blank">Add project link</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience & Leadership</h2>
+
+        <div class="info-card">
+            <h3>Report Writer</h3>
+            <p>Pakistan Red Crescent Society | 2026 – Present</p>
+            <p>Preparing reports documenting community activities and outcomes.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Campus Ambassador</h3>
+            <p>Global Front for Biodiversity | 2025 – Present</p>
+            <p>Supporting environmental awareness and youth engagement.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Volunteer Member</h3>
+            <p>Pakistan Red Crescent Society | 2025 – Present</p>
+            <p>Participating in humanitarian outreach and community health activities.</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Mathematics Teacher</h3>
+            <p>Peshawar School of Excellence | 2024 – 2025</p>
+            <p>Teaching mathematics and supporting students' learning.</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section contact-section">
+        <h2 class="section-title">Let's Connect!</h2>
+
+        <p>
+            I am always interested in learning, collaboration,
+            technology and opportunities that create positive social impact.
+        </p>
+
+        <div class="contact-details">
+            <p><strong>Email:</strong>
+                <a href="mailto:maryammkhan5689@gmail.com">
+                    maryammkhan5689@gmail.com
+                </a>
+            </p>
+
+            <p><strong>Location:</strong> Peshawar, Pakistan</p>
+
+            <p><strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/maryam-akram-4a6108353"
+                   target="_blank">
+                    Visit My LinkedIn
+                </a>
+            </p>
+
+            <p><strong>GitHub:</strong>
+                <a href="https://github.com/" target="_blank">
+                    Add Your GitHub Profile
+                </a>
+            </p>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+
+            <input type="email" id="email" placeholder="Your Email" required>
+
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+
+        <p id="formMessage"></p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© <span id="year"></span> Maryam Akram. All Rights Reserved.</p>
+        <p>Designed with passion and creativity.</p>
+    </footer>
+
 </body>
 </html>
-
