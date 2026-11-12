@@ -1,54 +1,21 @@
 
-// MOBILE NAVIGATION MENU
+// Mobile navigation menu
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-const menuToggle = document.getElementById("menuToggle");
-const navLinks = document.getElementById("navLinks");
-
-menuToggle.addEventListener("click", function() {
+menuToggle.addEventListener("click", function () {
     navLinks.classList.toggle("active");
 });
 
-// CLOSE MENU AFTER CLICKING A LINK
+// Close menu after clicking a navigation link
+const navigationItems = document.querySelectorAll(".nav-links a");
 
-const navigationLinks = document.querySelectorAll(".nav-links a");
-
-navigationLinks.forEach(function(link) {
-    link.addEventListener("click", function() {
+navigationItems.forEach(function (item) {
+    item.addEventListener("click", function () {
         navLinks.classList.remove("active");
     });
 });
 
-// AUTOMATIC COPYRIGHT YEAR
-
+// Automatically update the copyright year
 document.getElementById("year").textContent =
     new Date().getFullYear();
-
-// CONTACT FORM
-
-const contactForm = document.getElementById("contactForm");
-
-contactForm.addEventListener("submit", function(event) {
-
-    event.preventDefault();
-
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
-
-    const subject = encodeURIComponent(
-        "Portfolio Contact from " + name
-    );
-
-    const body = encodeURIComponent(
-        message + "\n\nFrom: " + name +
-        "\nEmail: " + email
-    );
-
-    document.getElementById("formMessage").textContent =
-        "Opening your email application...";
-
-    window.location.href =
-        "mailto:maryammkhan5689@gmail.com?subject=" +
-        subject + "&body=" + body;
-
-});
